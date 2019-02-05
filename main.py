@@ -26,13 +26,12 @@ def index():
             #if there is a blank space in username, it's invalid
             if i.isspace():
                 username_error = 'Username cannot contain spaces.'
-                username = ''
+                
             else:
                 #if username has fewer than 3 or greater than 20 characters, it's invalid
                 if (len(username) < 3) or (len(username) > 20):
                     username_error = 'Username needs to be 3-20 characters.'
-                    username = ''
-
+                    
         if not username:
             username_error = 'Not a valid username'
             username = ''
